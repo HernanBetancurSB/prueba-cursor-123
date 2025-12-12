@@ -76,9 +76,9 @@ const ChatArea = memo(({
 
   return (
     <div className="flex-1 flex flex-col min-h-0 relative">
-      {/* Fondo con patrón */}
+      {/* Fondo con patrón - Seguros Bolívar */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(52,120,255,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,168,89,0.1),transparent_50%)]" />
         <div
           className="absolute inset-0"
           style={{
@@ -107,7 +107,7 @@ const ChatArea = memo(({
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.1 }}
-                className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center mb-6 glow"
+                className="w-20 h-20 rounded-2xl bg-gradient-to-br from-bolivar-greenLight to-bolivar-green flex items-center justify-center mb-6 glow"
               >
                 <Sparkles className="w-10 h-10 text-white" />
               </motion.div>
@@ -118,7 +118,7 @@ const ChatArea = memo(({
                 transition={{ delay: 0.2 }}
                 className="text-3xl font-bold text-white mb-2"
               >
-                Bienvenido a <span className="text-gradient">Nexus Chat</span>
+                Bienvenido a <span className="text-gradient">Bolívar Chat</span>
               </motion.h2>
 
               <motion.p
@@ -144,9 +144,9 @@ const ChatArea = memo(({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 + index * 0.1 }}
-                    className="glass-effect-light rounded-xl p-4 text-center hover:border-primary-500/30 transition-smooth"
+                    className="glass-effect-light rounded-xl p-4 text-center hover:border-bolivar-greenLight/30 transition-smooth"
                   >
-                    <feature.icon className="w-8 h-8 text-primary-400 mx-auto mb-2" />
+                    <feature.icon className="w-8 h-8 text-bolivar-greenLight mx-auto mb-2" />
                     <h3 className="text-white font-medium text-sm">
                       {feature.title}
                     </h3>
@@ -182,7 +182,7 @@ const ChatArea = memo(({
                       className="
                         p-4 rounded-xl text-left
                         glass-effect-light
-                        hover:border-primary-500/30 hover:bg-dark-700/50
+                        hover:border-bolivar-greenLight/30 hover:bg-dark-700/50
                         transition-smooth group
                       "
                       aria-label={`Usar sugerencia: ${prompt}`}
@@ -223,7 +223,7 @@ const ChatArea = memo(({
         <div className="max-w-4xl mx-auto px-4 py-4">
           <ChatInput onSendMessage={onSendMessage} isLoading={isLoading} />
           <p className="text-center text-dark-500 text-xs mt-3">
-            Nexus Chat puede cometer errores. Verifica la información importante.
+            Bolívar Chat puede cometer errores. Verifica la información importante.
           </p>
         </div>
       </div>

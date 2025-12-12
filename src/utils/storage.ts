@@ -1,6 +1,6 @@
 import { Conversation } from "@/types";
 
-const STORAGE_KEY = "nexus-chat-conversations";
+const STORAGE_KEY = "bolivar-chat-conversations";
 
 export const saveConversations = (conversations: Conversation[]): void => {
   if (typeof window === "undefined") return;

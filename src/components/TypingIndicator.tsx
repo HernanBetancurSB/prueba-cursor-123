@@ -13,7 +13,7 @@ const TypingIndicator = memo(() => {
       className="flex gap-4 mb-6"
     >
       {/* Avatar */}
-      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center glow-subtle">
+      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-bolivar-greenLight to-bolivar-green flex items-center justify-center glow-subtle">
         <Sparkles className="w-5 h-5 text-white" />
       </div>
 

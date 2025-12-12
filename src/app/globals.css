@@ -46,9 +46,9 @@ body {
   background: #61636c;
 }
 
-/* Selección de texto */
+/* Selección de texto - Seguros Bolívar verde */
 ::selection {
-  background: rgba(52, 120, 255, 0.3);
+  background: rgba(0, 168, 89, 0.3);
   color: #fff;
 }
 
@@ -76,7 +76,7 @@ body {
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, #3478ff, #7aa8ff, #3478ff);
+    background: linear-gradient(135deg, #006B3F, #00A859, #00C853);
     -webkit-mask: 
       linear-gradient(#fff 0 0) content-box, 
       linear-gradient(#fff 0 0);
@@ -86,15 +86,15 @@ body {
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-primary-300 to-primary-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 via-primary-300 to-bolivar-greenBright;
   }
 
   .glow {
-    box-shadow: 0 0 20px rgba(52, 120, 255, 0.3), 0 0 40px rgba(52, 120, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 168, 89, 0.35), 0 0 40px rgba(0, 107, 63, 0.15);
   }
 
   .glow-subtle {
-    box-shadow: 0 0 15px rgba(52, 120, 255, 0.15);
+    box-shadow: 0 0 15px rgba(0, 168, 89, 0.2);
   }
 }
 
@@ -106,7 +106,7 @@ pre {
 
 code {
   font-family: var(--font-jetbrains);
-  @apply text-primary-300;
+  @apply text-bolivar-greenBright;
 }
 
 pre code {
@@ -145,19 +145,19 @@ pre code {
 }
 
 .markdown-content a {
-  @apply text-primary-400 hover:text-primary-300 underline;
+  @apply text-bolivar-greenLight hover:text-bolivar-greenBright underline;
 }
 
-/* Focus states */
+/* Focus states - Seguros Bolívar */
 input:focus,
 textarea:focus,
 button:focus {
-  @apply outline-none ring-2 ring-primary-500/50;
+  @apply outline-none ring-2 ring-bolivar-greenLight/50;
 }
 
-/* Animación de typing dots */
+/* Animación de typing dots - Seguros Bolívar */
 .typing-dot {
-  @apply w-2 h-2 rounded-full bg-primary-400;
+  @apply w-2 h-2 rounded-full bg-bolivar-greenLight;
   animation: typing 1.4s ease-in-out infinite;
 }
 

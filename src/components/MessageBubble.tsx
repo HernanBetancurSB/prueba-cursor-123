@@ -87,8 +87,8 @@ const MessageBubble = memo(({ message, isLast }: MessageBubbleProps) => {
           flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center
           ${
             isUser
-              ? "bg-gradient-to-br from-emerald-400 to-cyan-500"
-              : "bg-gradient-to-br from-primary-500 to-primary-700 glow-subtle"
+              ? "bg-gradient-to-br from-bolivar-greenBright to-bolivar-accent"
+              : "bg-gradient-to-br from-bolivar-greenLight to-bolivar-green glow-subtle"
           }
         `}
       >
@@ -106,7 +106,7 @@ const MessageBubble = memo(({ message, isLast }: MessageBubbleProps) => {
             inline-block rounded-2xl px-5 py-3 max-w-full
             ${
               isUser
-                ? "bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-tr-md"
+                ? "bg-gradient-to-br from-bolivar-green to-bolivar-greenLight text-white rounded-tr-md"
                 : "glass-effect text-dark-100 rounded-tl-md"
             }
           `}

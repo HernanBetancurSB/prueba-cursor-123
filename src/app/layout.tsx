@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nexus Chat - Tu Asistente de IA",
-  description: "Aplicación de chat con inteligencia artificial para conversaciones inteligentes",
-  keywords: ["chat", "AI", "inteligencia artificial", "asistente"],
+  title: "Bolívar Chat - Asistente Virtual | Seguros Bolívar",
+  description: "Tu asistente virtual de Seguros Bolívar para consultas inteligentes y atención personalizada",
+  keywords: ["chat", "Seguros Bolívar", "asistente virtual", "atención al cliente"],
 };
 
 type RootLayoutProps = {

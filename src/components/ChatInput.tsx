@@ -52,7 +52,7 @@ const ChatInput = memo(({ onSendMessage, isLoading }: ChatInputProps) => {
       animate={{ opacity: 1, y: 0 }}
       className="relative"
     >
-      <div className="relative flex items-end gap-3 glass-effect rounded-2xl p-2 focus-within:ring-2 focus-within:ring-primary-500/50 transition-smooth">
+      <div className="relative flex items-end gap-3 glass-effect rounded-2xl p-2 focus-within:ring-2 focus-within:ring-bolivar-greenLight/50 transition-smooth">
         <textarea
           ref={textareaRef}
           value={message}
@@ -82,7 +82,7 @@ const ChatInput = memo(({ onSendMessage, isLoading }: ChatInputProps) => {
             transition-smooth
             ${
               message.trim() && !isLoading
-                ? "bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 text-white glow-subtle hover:glow"
+                ? "bg-gradient-to-r from-bolivar-green to-bolivar-greenLight hover:from-bolivar-greenLight hover:to-bolivar-greenBright text-white glow-subtle hover:glow"
                 : "bg-dark-700/50 text-dark-500 cursor-not-allowed"
             }
           `}

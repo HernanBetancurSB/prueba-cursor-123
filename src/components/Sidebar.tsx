@@ -71,12 +71,12 @@ const Sidebar = memo(({
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-dark-700/50">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center glow-subtle">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-bolivar-greenLight to-bolivar-green flex items-center justify-center glow-subtle">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="font-semibold text-white text-lg">Nexus Chat</h1>
-              <p className="text-xs text-dark-400">Asistente de IA</p>
+              <h1 className="font-semibold text-white text-lg">Bolívar Chat</h1>
+              <p className="text-xs text-dark-400">Asistente Virtual</p>
             </div>
           </div>
           <button
@@ -97,11 +97,11 @@ const Sidebar = memo(({
             className="
               w-full flex items-center justify-center gap-2 
               py-3 px-4 rounded-xl
-              bg-gradient-to-r from-primary-600 to-primary-500
-              hover:from-primary-500 hover:to-primary-400
+              bg-gradient-to-r from-bolivar-green to-bolivar-greenLight
+              hover:from-bolivar-greenLight hover:to-bolivar-greenBright
               text-white font-medium
               transition-smooth glow-subtle hover:glow
-              focus:ring-2 focus:ring-primary-400/50
+              focus:ring-2 focus:ring-bolivar-greenLight/50
             "
             aria-label="Iniciar nueva conversación"
           >
@@ -149,7 +149,7 @@ const Sidebar = memo(({
                         cursor-pointer transition-smooth
                         ${
                           activeConversationId === conversation.id
-                            ? "bg-primary-600/20 border border-primary-500/30"
+                            ? "bg-bolivar-green/20 border border-bolivar-greenLight/30"
                             : "hover:bg-dark-700/50 border border-transparent"
                         }
                       `}
@@ -161,7 +161,7 @@ const Sidebar = memo(({
                           w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0
                           ${
                             activeConversationId === conversation.id
-                              ? "bg-primary-500/30 text-primary-400"
+                              ? "bg-bolivar-greenLight/30 text-bolivar-greenLight"
                               : "bg-dark-700/50 text-dark-400"
                           }
                         `}
@@ -215,12 +215,12 @@ const Sidebar = memo(({
         {/* Footer */}
         <div className="p-4 border-t border-dark-700/50">
           <div className="flex items-center gap-3 px-3 py-2 rounded-lg bg-dark-800/50">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center text-white text-sm font-semibold">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-bolivar-greenLight to-bolivar-green flex items-center justify-center text-white text-sm font-semibold">
               U
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-white truncate">Usuario</p>
-              <p className="text-xs text-dark-400">Plan Gratuito</p>
+              <p className="text-xs text-dark-400">Cliente Bolívar</p>
             </div>
           </div>
         </div>
